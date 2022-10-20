@@ -1,6 +1,6 @@
 
 
-<button class="btn btn-primary " [disabled]="!allowNewServer"  (click)="creatServer()">Add server</button>
+<button class="btn btn-primary " [disabled]='!allowNewServer'  (click)="creatServer()">Add server</button>
 
 <div class="row m-4">
     <!-- <div class="col-6 "><input type="text" class="form-control" (input)="onUpdatServerName($event)"><p>{{serverName}}</p></div> -->
@@ -13,3 +13,24 @@
     <p>no server was created !</p>
 </ng-template>
 <p>{{'Server'}} with id : {{ serverId }}  is {{ getstatus() }} </p>
+<app-server1 *ngFor="let server of servers"></app-server1>
+<app-store></app-store>
+<table class="table" *ngIf="products.length">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">name</th>
+        <th scope="col">price</th>
+        <th scope="col">code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <th scope="row">1</th>
+        <td>{{product.name}}</td>
+        <td> {{product.price | currency:'EUR' : 'symbol':'1.2-2'}} </td>
+        <td>{{product.code}}</td>
+      </tr>
+      
+    </tbody>
+  </table>

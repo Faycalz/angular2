@@ -1,0 +1,46 @@
+import { Prod } from "./prod"
+export const PRODS: Prod[] =
+[{
+	"name": "hero Product",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"image": "../assets/images/DSC_2241.jpg",
+	"rating": 5,
+    
+},{
+	"name": "Product 1",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"image": "../assets/images/DSC_2241.jpg",
+	"rating": 5,
+},{
+	"name": "Product 2",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"image": "../assets/images/pos.png",
+	"rating": 4,
+},{
+	"name": "Product 3",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"image": "../assets/images/DSC_2300.jpg",
+	"rating": 3,
+},{
+	"name": "Product 4",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"image": "../assets/images/DSC_2241.jpg",
+	"rating": 5,
+},{
+	"name": "Product 5",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"image": "../assets/images/pos.png",
+	"rating": 5,
+},{
+	"name": "Product 6",
+	"detail": "Lorem ipsum dolor sit amet",
+	"price": "99",
+	"image": "../assets/images/DSC_2300.jpg",
+	"rating": 5,
+}]

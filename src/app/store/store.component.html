@@ -1,0 +1,19 @@
+
+<h2 class="text-center">Our products</h2>
+<div class="container" >
+    <div class="row" >
+        <div class="col-lg-4 mt-2" *ngFor="let product of products">
+        <div class="card"  style="width: 18rem;">
+            <img [src]="product.image" class="card-img-top img-fluid" alt="">
+            <div class="card-body">
+            <h5 class="card-title">{{product.name}} {{text}}</h5>
+            <p class="card-text">{{product.detail | convertToSpace:'o'}} </p>
+            <p    class='{{getColor()}}'>{{product.price | currency:'USD'}}</p>
+            <a href="#" class="btn btn-primary">Add to cart</a>
+            <pm-star [rating]="product.rating" (ratingClicked)="onRatingClicked($event)"></pm-star>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+

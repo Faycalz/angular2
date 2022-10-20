@@ -19,6 +19,17 @@ export class ServerComponent implements OnInit {
   serverCreation :string="server not created yet !"
   serverName ="";
   ServerCreated:boolean = false;
+  servers=['testServer1','testServer2']
+  products: any =[
+    {"name":"pos",
+      "price":18500,
+      "code":"alpha08"
+    },
+    {"name":"pos2",
+      "price":98500,
+      "code":"alpha08"
+    }
+  ]
 
   getstatus():string{
     return this.serverStatus + ' now';
@@ -35,6 +46,7 @@ export class ServerComponent implements OnInit {
   creatServer(){
     this.ServerCreated = true;
     this.serverStatus = 'online'
+    this.servers.push(this.serverName)
     this.serverCreation = "server created succesfuly "+this.serverName
   }
   onUpdatServerName(event: Event){
